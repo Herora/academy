@@ -1,4 +1,17 @@
 <div class={{modeTheme}}>
-    <app-config-mode-theme (response)='thememode($event)'></app-config-mode-theme>
-    <app-nav-sibar [dataRoutes]="dataRouters"></app-nav-sibar>
+    <nav class="px-[10%]   flex w-full flex-wrap items-center justify-between bg-neutral-100 py-2 text-neutral-500 shadow-lg hover:text-neutral-700 focus:text-neutral-700 dark:bg-neutral-600 lg:py-4">
+        <div class="flex w-full flex-wrap items-center justify-between px-3">
+            <div class="flex">
+                <app-nav-sibar [dataRoutes]="dataRouters"></app-nav-sibar>
+            </div>
+            <img src="assets/images/logoWhiteAcademy.png" style="height: 40px" alt="TE Logo" loading="lazy" />
+            <app-config-mode-theme (response)='thememode($event)'></app-config-mode-theme>
+        </div>
+    </nav>
+    <div class="px-[10%]">
+        <div class="px-[10%]">
+            <h1>Hola</h1>
+        </div>
+    </div>
+    <app-footer></app-footer>
 </div>

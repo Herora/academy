@@ -1,3 +1,7 @@
+@import "assets/sass/fonts";
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+body{
+    font-family: 'coolvetica', 'regular', sans-serif;
+}
