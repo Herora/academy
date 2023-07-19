@@ -11,4 +11,9 @@ export class InitialComponent implements OnInit{
   }
   ngOnInit(): void {
   }
+  public dataRouters = [
+    {name : 'Inicio',url:'/account/initial'},
+    {name : 'login',url:'/account/login'},
+    {name : 'registro',url:'/account/register'}
+  ]
 }

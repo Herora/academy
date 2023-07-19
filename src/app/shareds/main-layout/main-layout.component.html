@@ -1,6 +1,6 @@
 <div class={{modeTheme}}>
     <div>
-        <app-nav-sibar></app-nav-sibar> 
+        <app-nav-sibar [dataRoutes]="dataRouters"></app-nav-sibar> 
         <app-config-mode-theme (response)='thememode($event)'></app-config-mode-theme>
     </div>
     <div>

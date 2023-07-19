@@ -12,5 +12,7 @@ export class MainLayoutComponent implements OnInit{
   }
   ngOnInit(): void {
   }
-  
+  public dataRouters = [
+    {name : 'Home',url:'/dashboard/home'}
+  ]
 }

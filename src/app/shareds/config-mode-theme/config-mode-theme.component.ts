@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-config-mode-theme',
@@ -6,7 +6,6 @@ import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
   styleUrls: ['./config-mode-theme.component.scss']
 })
 export class ConfigModeThemeComponent implements OnInit {
-  @Input() public mode: string = '';
   @Output() public response = new EventEmitter<any>();
   ngOnInit(): void {
     

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import {
   Sidenav,
   initTE,
@@ -10,6 +10,7 @@ import {
   styleUrls: ['./nav-sibar.component.scss']
 })
 export class NavSibarComponent implements OnInit {
+  @Input() public dataRoutes: any = [{}];
   ngOnInit(): void {
     initTE({ Sidenav });
     
