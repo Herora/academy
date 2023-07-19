@@ -6,6 +6,13 @@ module.exports = {
   ],
   theme: {
       extend: {},
+      // colors:{
+      //   colorOne:'red',
+      //   colorTow:'blue',
+      //   colorThreee:'green',
+      //   colorFour:'gray',
+      //   colorFive:'gray'
+      // }
   },
   darkMode: "class",
   plugins: [require("tw-elements/dist/plugin.cjs")]

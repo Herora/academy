@@ -1,12 +1,13 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { MainLayoutComponent } from 'src/app/shareds/main-layout/main-layout.component';
 // import { MainLayoutComponent } from 'src/app/layouts/main-layout/main-layout.component';
 // import { AuthGuard } from 'src/app/core/guards/auth-guard/auth.guard';
 
 const routes: Routes = [
   {
     path: '',
-    // component: MainLayoutComponent,
+    component: MainLayoutComponent,
     children: [
       {
         path: 'home',

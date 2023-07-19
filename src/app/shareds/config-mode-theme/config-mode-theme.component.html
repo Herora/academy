@@ -1,0 +1,8 @@
+<div class="w-[24px]">
+    <div *ngIf="dataTheme === 'light'" (click)="changeTheme('dark')">
+        <img src="./../../../assets/icons/sunDark.png" alt="">
+    </div>
+    <div *ngIf="dataTheme === 'dark'" (click)="changeTheme('light')">
+        <img src="./../../../assets/icons/sunLight.png" alt="">
+    </div>
+</div>

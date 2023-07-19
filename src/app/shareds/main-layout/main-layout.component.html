@@ -1,0 +1,15 @@
+<div class={{modeTheme}}>
+    <div>
+        <app-nav-sibar></app-nav-sibar> 
+        <app-config-mode-theme (response)='thememode($event)'></app-config-mode-theme>
+    </div>
+    <div>
+        <div class="px-[10%]">
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+
+    <app-footer>
+        
+    </app-footer>
+</div>
