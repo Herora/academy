@@ -5,7 +5,13 @@
                 <app-nav-sibar [dataRoutes]="dataRouters"></app-nav-sibar>
             </div>
             <img src="assets/images/logoWhiteAcademy.png" style="height: 40px" alt="TE Logo" loading="lazy" />
-            <app-config-mode-theme (response)='thememode($event)'></app-config-mode-theme>
+            <div class="flex">
+                <app-config-mode-theme (response)='thememode($event)'></app-config-mode-theme>
+                <select class="ml-3" name="" id="">
+                    <option value="">es</option>
+                    <option value="">en</option>
+                </select>
+            </div>
         </div>
     </nav>
     <div class=" pt-[30px] px-[10%] bg-neutral-300 dark:bg-neutral-700 text-white">
@@ -106,7 +112,7 @@
             </div>
         </div>
         <div class="pb-[20px]">
-            <img src="https://images.unsplash.com/photo-1607082350899-7e105aa886ae?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8c2hvcHBpbmclMjBzYWxlfGVufDB8fDB8fHww&w=1000&q=80" class="w-full max-h-[200px]" alt="">
+            <img src="https://www.westjet.com/content/dam/westjet/images/deals_planned-sales/birthday-sale/230223-SALE-deflated-balloons-896x280.jpg" class="w-full max-h-[200px]" alt="">
         </div>
     </div>
     <app-footer></app-footer>
