@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import {
+  Carousel,
+  initTE,
+} from "tw-elements"
 @Component({
   selector: 'app-initial',
   templateUrl: './initial.component.html',
@@ -10,6 +14,7 @@ export class InitialComponent implements OnInit{
     this.modeTheme = data;
   }
   ngOnInit(): void {
+    initTE({ Carousel })
   }
   public dataRouters = [
     {name : 'Inicio',url:'/account/initial'},

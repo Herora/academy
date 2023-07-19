@@ -1,6 +1,6 @@
-<div class={{modeTheme}}>
-    <nav class="px-[10%]   flex w-full flex-wrap items-center justify-between bg-neutral-100 py-2 text-neutral-500 shadow-lg hover:text-neutral-700 focus:text-neutral-700 dark:bg-neutral-600 lg:py-4">
-        <div class="flex w-full flex-wrap items-center justify-between px-3">
+<div class='{{modeTheme}}'>
+    <nav class="px-[10%] flex-wrap items-center justify-between bg-neutral-100 py-2 text-neutral-500 shadow-lg hover:text-neutral-700 focus:text-neutral-700 dark:bg-neutral-600 lg:py-4">
+        <div class="flex flex-wrap items-center justify-between">
             <div class="flex">
                 <app-nav-sibar [dataRoutes]="dataRouters"></app-nav-sibar>
             </div>
@@ -8,9 +8,105 @@
             <app-config-mode-theme (response)='thememode($event)'></app-config-mode-theme>
         </div>
     </nav>
-    <div class="px-[10%]">
-        <div class="px-[10%]">
-            <h1>Hola</h1>
+    <div class=" pt-[30px] px-[10%] bg-neutral-300 dark:bg-neutral-700 text-white">
+        <div class="max-w-[500px] flex justify-center ml-auto mr-auto">
+            <div id="carouselExampleCaptions" class="relative max-h-[200px]" data-te-carousel-init
+                data-te-carousel-slide>
+                <!--Carousel indicators-->
+                <div class="absolute bottom-0 left-0 right-0 z-[2] mx-[15%] mb-4 flex list-none justify-center p-0"
+                    data-te-carousel-indicators>
+                    <button type="button" data-te-target="#carouselExampleCaptions" data-te-slide-to="0"
+                        data-te-carousel-active
+                        class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-te-target="#carouselExampleCaptions" data-te-slide-to="1"
+                        class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-te-target="#carouselExampleCaptions" data-te-slide-to="2"
+                        class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
+                        aria-label="Slide 3"></button>
+                </div>
+                <!--Carousel items-->
+                <div id="carruselImgs"
+                    class="relative  overflow-hidden after:clear-both after:block after:content-['']">
+                    <!--First item-->
+                    <div class="relative float-left -mr-[100%] w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+                        data-te-carousel-active data-te-carousel-item style="backface-visibility: hidden">
+                        <img src="https://tecdn.b-cdn.net/img/Photos/Slides/img%20(15).jpg" class="block w-full"
+                            alt="..." />
+                    </div>
+                    <!--Second item-->
+                    <div class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+                        data-te-carousel-item style="backface-visibility: hidden">
+                        <img src="https://tecdn.b-cdn.net/img/Photos/Slides/img%20(22).jpg" class="block w-full"
+                            alt="..." />
+                    </div>
+                    <!--Third item-->
+                    <div class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+                        data-te-carousel-item style="backface-visibility: hidden">
+                        <img src="https://tecdn.b-cdn.net/img/Photos/Slides/img%20(23).jpg" class="block w-full"
+                            alt="..." />
+                    </div>
+                </div>
+                <!--Carousel controls - prev item-->
+                <button
+                    class="absolute bottom-0 left-0 top-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
+                    type="button" data-te-target="#carouselExampleCaptions" data-te-slide="prev">
+                    <span class="inline-block h-8 w-8">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="h-6 w-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+                        </svg>
+                    </span>
+                    <span
+                        class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]">Previous</span>
+                </button>
+                <!--Carousel controls - next item-->
+                <button
+                    class="absolute bottom-0 right-0 top-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
+                    type="button" data-te-target="#carouselExampleCaptions" data-te-slide="next">
+                    <span class="inline-block h-8 w-8">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="h-6 w-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                        </svg>
+                    </span>
+                    <span
+                        class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]">Next</span>
+                </button>
+            </div>
+        </div>
+        <div class="pt-[50px] pb-5 md:flex block md:justify-between">
+            <div class="max-w-[250px] ml-auto mr-auto mb-[30px] flex  flex-col rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700  md:flex-row">
+                <div class="rounded-md flex flex-col justify-start p-1 min-h-max dark:text-white bg-white text-neutral-200 dark:bg-neutral-500">
+                    <h5 class="mb-2 text-xl text-center font-medium text-neutral-800 dark:text-neutral-50">b1</h5>
+                    <p class="mb-4 text-xs text-neutral-600 dark:text-white">
+                        This is a wider card with supporting text below as a natural lead-in
+                    </p>
+                    <button type="button" class="inline-block rounded bg-primary px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]">Adquirir</button>
+                </div>
+            </div>
+            <div class="max-w-[250px] ml-auto mr-auto mb-[30px] flex  flex-col rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700  md:flex-row">
+                <div class="rounded-md flex flex-col justify-start p-1 min-h-max dark:text-white bg-white text-neutral-200 dark:bg-neutral-500">
+                    <h5 class="mb-2 text-xl text-center font-medium text-neutral-800 dark:text-neutral-50">b1</h5>
+                    <p class="mb-4 text-xs text-neutral-600 dark:text-white">
+                        This is a wider card with supporting text below as a natural lead-in
+                    </p>
+                    <button type="button" class="inline-block rounded bg-primary px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]">Adquirir</button>
+                </div>
+            </div>
+            <div class="max-w-[250px] ml-auto mr-auto mb-[30px] flex  flex-col rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700  md:flex-row">
+                <div class="rounded-md flex flex-col justify-start p-1 min-h-max dark:text-white bg-white text-neutral-200 dark:bg-neutral-500">
+                    <h5 class="mb-2 text-xl text-center font-medium text-neutral-800 dark:text-neutral-50">b1</h5>
+                    <p class="mb-4 text-xs text-neutral-600 dark:text-white">
+                        This is a wider card with supporting text below as a natural lead-in
+                    </p>
+                    <button type="button" class="inline-block rounded bg-primary px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]">Adquirir</button>
+                </div>
+            </div>
+        </div>
+        <div class="pb-[20px]">
+            <img src="https://images.unsplash.com/photo-1607082350899-7e105aa886ae?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8c2hvcHBpbmclMjBzYWxlfGVufDB8fDB8fHww&w=1000&q=80" class="w-full max-h-[200px]" alt="">
         </div>
     </div>
     <app-footer></app-footer>
