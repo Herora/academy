@@ -7,6 +7,6 @@ import { Component, OnInit } from '@angular/core';
 export class AppComponent implements OnInit{
   title = 'academy';
   ngOnInit(): void {
-    
+    window.localStorage.setItem('data-theme', 'light');
   }
 }
