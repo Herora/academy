@@ -7,13 +7,15 @@ import { FooterComponent } from './footer/footer.component';
 import { AppRoutingModule } from '../app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
+import { CarruselComponent } from './carrusel/carrusel.component';
 
 @NgModule({
   declarations: [
     MainLayoutComponent,
     NavSibarComponent,
     ConfigModeThemeComponent,
-    FooterComponent
+    FooterComponent,
+    CarruselComponent
   ],
   imports: [
     CommonModule,
@@ -24,7 +26,8 @@ import { RouterModule } from '@angular/router';
     MainLayoutComponent,
     NavSibarComponent,
     ConfigModeThemeComponent,
-    FooterComponent
+    FooterComponent,
+    CarruselComponent
   ]
 })
 export class SharedsModule { }
